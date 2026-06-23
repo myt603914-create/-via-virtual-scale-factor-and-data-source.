@@ -1,18 +1,18 @@
 这是去除了所有 Emoji 表情符号的纯净版本，格式严谨，您可以直接点击代码块右上角的“复制”按钮将其保存为 `README.md` 文件：
 
-```markdown
-# Root Cause Analysis in Complex Industrial Process Monitoring via Virtual Scale Factor and Data Source
+```markdown   ”“减价
+# Root Cause Analysis in Complex Industrial Process Monitoring via Virtual Scale Factor and Data Source基于虚拟尺度因子和数据源的复杂工业过程监控的根本原因分析
 
-<div align="center">
+<div align="center">   <div align="center"><div align="center">   <div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)
-[![Paper Status](https://img.shields.io/badge/Paper-Under_Review-orange.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)[![条款:](https://img.shields.io/badge/License-MIT-blue.svg)] (https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)[![Python 3.8](https://img.shields.io/badge/python-3.8 -blue.svg)]（https://www.python.org/downloads/）
+[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)[! [PyTorch] (https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&标志= PyTorch& logoColor = white)] (https://pytorch.org/)
+[![Paper Status](https://img.shields.io/badge/Paper-Under_Review-orange.svg)]()[!(纸状态)(https://img.shields.io/badge/Paper-Under_Review-orange.svg)) ()
 
 **基于虚拟尺度因子与数据源的复杂工业过程监控根因分析** *(Official PyTorch Implementation)*
 
-</div>
+</div>   < / div>
 
 ---
 
@@ -20,7 +20,7 @@
 
 可靠的故障检测与根因分析（Root Cause Analysis, RCA）对于保障复杂工业系统的安全稳定运行至关重要。然而，现代工业数据往往具有高维、强非线性和多变量耦合等特征，使得传统的归因方法面临梯度饱和、噪声敏感以及物理可解释性弱等挑战。
 
-本项目为论文 **"Root Cause Analysis in complex industrial process monitoring via virtual scale factor and data source"**（目前在投于 *Journal of Process Control*）的官方代码实现。我们提出了一种新型的**虚拟尺度因子（VSF）归因框架**，并结合融合了重构误差与 $T^2$ 统计量的**增强型自编码器（Enhanced AE）**，为工业异常检测与故障诊断提供了一套完整、鲁棒且具有极强物理可解释性的解决方案。
+本项目为论文 **"Root Cause Analysis in complex industrial process monitoring via virtual scale factor and data source"**（目前在投于 *Journal of Process Control*）的官方代码实现。我们提出了一种新型的**虚拟尺度因子（VSF）归因框架**，并结合融合了重构误差与 $T^2$ 统计量的**增强型自编码器（Enhanced AE）**，为工业异常检测与故障诊断提供了一套完整、鲁棒且具有极强物理可解释性的解决方案。本项目为论文 **"Root Cause Analysis in complex industrial process monitoring via virtual scale factor and data source"**（目前在投于 *Journal of Process Control*）的官方代码实现。我们提出了一种新型的**虚拟尺度因子（VSF）归因框架**，并结合融合了重构误差与 $T^2$ 统计量的**增强型自编码器（Enhanced AE）**，为工业异常检测与故障诊断提供了一套完整、鲁棒且具有极强物理可解释性的解决方案。
 
 ### 核心优势
 - **更精准的分布捕捉**：相比于传统的梯度（Gradient）或基于 Shapley 值的归因方法，我们的 VSF 方法能够更准确地捕捉非线性多模态数据中的分布结构，有效避免“模态混淆”。
@@ -33,7 +33,7 @@
 
 本项目代码结构清晰，包含了核心算法模块以及用于复现论文二维及多维（TEP）实验结果的完整工作流：
 
-```text
+```text   ' ' '文本
 ├── attribution.py       # 核心归因算法库：包含 VSF、Gradient、IG、SHAP、DeepLIFT 的底层实现及标准化输出
 ├── indicators.py        # 异常检测模型库：包含 PCA、SVDD、Enhanced AE 的模型构建与超参数配置 (ExpConfig)
 ├── 2d_yuan.ipynb        # 2D 合成数据实验：单峰高斯分布下的特征归因图表复现
@@ -52,13 +52,13 @@
 
 本项目推荐使用 **Python 3.8 或更高版本**。请在您的虚拟环境（如 Conda 或 venv）中执行以下命令以安装所需依赖：
 
-```bash
+```bash   ”“bash   “bash”;“bash
 # 1. 克隆本仓库到本地
-git clone [https://github.com/YourUsername/YourRepoName.git](https://github.com/YourUsername/YourRepoName.git)
+git clone [https://github.com/YourUsername/YourRepoName.git](https://github.com/YourUsername/YourRepoName.git)git clone [https://github.com/YourUsername/YourRepoName.git](https://github.com/YourUsername/YourRepoName.git]git clone [https://github.com/YourUsername/YourRepoName.git](https://github.com/YourUsername/YourRepoName.git)git clone [https://github.com/YourUsername/YourRepoName.git](https://github.com/YourUsername/YourRepoName.git] .
 cd YourRepoName
 
 # 2. 安装核心计算与深度学习依赖
-pip install torch numpy pandas scikit-learn scipy
+pip install torch numpy pandas scikit-learn scipyPIP安装火炬numpy熊猫scikit-学习scipy
 
 # 3. 安装可视化与可解释性辅助库
 pip install matplotlib tqdm captum shap jupyter
@@ -107,22 +107,7 @@ pip install matplotlib tqdm captum shap jupyter
 
 区别于仅关注局部梯度的传统方法，VSF 方法构建了一个虚拟尺度扰动空间。通过求解梯度势场中的状态演化方程，定位系统稳定点（即“数据源 Data Source”）。最终的变量贡献度由**局部模型敏感度**与**稳态偏差**共同决定，使得归因结果兼具高精度与明确的物理意义。
 
----
 
-## 引用信息
-
-如果您在学术研究、工程应用或日常学习中使用了本仓库的代码、数据或方法，请您考虑引用我们的论文：
-
-```bibtex
-@article{meng2026root,
-  title={Root Cause Analysis in complex industrial process monitoring via virtual scale factor and data source},
-  author={Meng, Yutong},
-  journal={Journal of Process Control},
-  year={2026},
-  note={Under Review}
-}
-
-```
 
 ---
 
