@@ -1,18 +1,16 @@
-这是去除了所有 Emoji 表情符号的纯净版本，格式严谨，您可以直接点击代码块右上角的“复制”按钮将其保存为 `README.md` 文件：
 
-```markdown   ”“减价
 # Root Cause Analysis in Complex Industrial Process Monitoring via Virtual Scale Factor and Data Source基于虚拟尺度因子和数据源的复杂工业过程监控的根本原因分析
 
-<div align="center">   <div align="center"><div align="center">   <div align="center">
+<div align="center">   <div align="center"><div align="center">   <div align="center"><div align   对齐="center"   "center">   <div align   对齐="center"   "center"><div align   对齐="center"   "center">   <div align   对齐="center"   "center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)[![条款:](https://img.shields.io/badge/License-MIT-blue.svg)] (https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)[![Python 3.8](https://img.shields.io/badge/python-3.8 -blue.svg)]（https://www.python.org/downloads/）
-[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)[! [PyTorch] (https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&标志= PyTorch& logoColor = white)] (https://pytorch.org/)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)[![Python 3.8](https://img.shields.io/badge/python-3.8 -blue.svg)]（https://www.python.org/downloads/）[![Python 3.8](https://img.shields.io/badge/python-3.8 -blue.svg)](https://www.python.org/downloads/)[！[Python 3.8](https://img.shields.io/badge/python-3.8 -blue.svg)]（https://www.python.org/downloads/）
+[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)[! [PyTorch] (https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&标志= PyTorch& logoColor = white)] (https://pytorch.org/)[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)[! [PyTorch] (https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&标志= PyTorch& logoColor = white)] (https://pytorch.org/)
 [![Paper Status](https://img.shields.io/badge/Paper-Under_Review-orange.svg)]()[!(纸状态)(https://img.shields.io/badge/Paper-Under_Review-orange.svg)) ()
 
 **基于虚拟尺度因子与数据源的复杂工业过程监控根因分析** *(Official PyTorch Implementation)*
 
-</div>   < / div>
+</div>   < / div>   “DIVA / DIVA / DIVA”。
 
 ---
 
@@ -20,7 +18,7 @@
 
 可靠的故障检测与根因分析（Root Cause Analysis, RCA）对于保障复杂工业系统的安全稳定运行至关重要。然而，现代工业数据往往具有高维、强非线性和多变量耦合等特征，使得传统的归因方法面临梯度饱和、噪声敏感以及物理可解释性弱等挑战。
 
-本项目为论文 **"Root Cause Analysis in complex industrial process monitoring via virtual scale factor and data source"**（目前在投于 *Journal of Process Control*）的官方代码实现。我们提出了一种新型的**虚拟尺度因子（VSF）归因框架**，并结合融合了重构误差与 $T^2$ 统计量的**增强型自编码器（Enhanced AE）**，为工业异常检测与故障诊断提供了一套完整、鲁棒且具有极强物理可解释性的解决方案。本项目为论文 **"Root Cause Analysis in complex industrial process monitoring via virtual scale factor and data source"**（目前在投于 *Journal of Process Control*）的官方代码实现。我们提出了一种新型的**虚拟尺度因子（VSF）归因框架**，并结合融合了重构误差与 $T^2$ 统计量的**增强型自编码器（Enhanced AE）**，为工业异常检测与故障诊断提供了一套完整、鲁棒且具有极强物理可解释性的解决方案。
+本项目为论文 **"Root Cause Analysis in complex industrial process monitoring via virtual scale factor and data source"**（目前在投于 *Journal of Process Control*）的官方代码实现。我们提出了一种新型的**虚拟尺度因子（VSF）归因框架**，并结合融合了重构误差与 $T^2$ 统计量的**增强型自编码器（Enhanced AE）**，为工业异常检测与故障诊断提供了一套完整、鲁棒且具有极强物理可解释性的解决方案。本项目为论文 **"Root Cause Analysis in complex industrial process monitoring via virtual scale factor and data source"**（目前在投于 *Journal of Process Control*）的官方代码实现。我们提出了一种新型的**虚拟尺度因子（VSF）归因框架**，并结合融合了重构误差与 $T^2$ 统计量的**增强型自编码器（Enhanced AE）**，为工业异常检测与故障诊断提供了一套完整、鲁棒且具有极强物理可解释性的解决方案。本项目为论文 **"Root Cause Analysis in complex industrial process monitoring via virtual scale factor and data source"基于虚拟尺度因子和数据源的复杂工业过程监控根本原因分析**（目前在投于 *Journal of Process Control过程控制杂志*）的官方代码实现。我们提出了一种新型的**虚拟尺度因子（VSF）归因框架**，并结合融合了重构误差与 $T^2$ 统计量的**增强型自编码器（Enhanced AE）**，为工业异常检测与故障诊断提供了一套完整、鲁棒且具有极强物理可解释性的解决方案。本项目为论文 **"Root Cause Analysis in complex industrial process monitoring via virtual scale factor and data source"基于虚拟尺度因子和数据源的复杂工业过程监控根本原因分析**（目前在投于 *Journal of Process Control过程控制杂志*）的官方代码实现。我们提出了一种新型的**虚拟尺度因子（VSF）归因框架**，并结合融合了重构误差与 $T^2$ 统计量的**增强型自编码器（Enhanced AE）**，为工业异常检测与故障诊断提供了一套完整、鲁棒且具有极强物理可解释性的解决方案。
 
 ### 核心优势
 - **更精准的分布捕捉**：相比于传统的梯度（Gradient）或基于 Shapley 值的归因方法，我们的 VSF 方法能够更准确地捕捉非线性多模态数据中的分布结构，有效避免“模态混淆”。
