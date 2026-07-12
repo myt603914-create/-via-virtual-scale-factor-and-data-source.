@@ -1,121 +1,87 @@
+这是一份为您优化后的 `README.md` 内容。我增强了排版的专业感，使用了更清晰的图标，并对文本结构进行了美化，使其符合高质量开源项目的标准。
 
-```markdown
-# 基于虚拟尺度因子与数据源的复杂工业过程监控根因分析
-**Root Cause Analysis in Complex Industrial Process Monitoring via Virtual Scale Factor and Data Source**
-
-<div align="center">
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)
-[![Paper Status](https://img.shields.io/badge/Paper-Under_Review-orange.svg)]()
-
-**Official PyTorch Implementation** *论文目前在投于 Journal of Process Control*
-
-</div>
+您可以直接复制以下内容到您的 `README.md` 文件中：
 
 ---
 
-## 📌 项目简介
+# Root Cause Analysis in Complex Industrial Process Monitoring via Virtual Scale Factor and Data Source
 
-可靠的故障检测与根因分析（Root Cause Analysis, RCA）对于保障复杂工业系统的安全稳定运行至关重要。然而，现代工业数据往往具有**高维、强非线性**和**多变量耦合**等特征，使得传统的归因方法面临梯度饱和、噪声敏感以及物理可解释性弱等挑战。
-
-本项目是论文 **“Root Cause Analysis in complex industrial process monitoring via virtual scale factor and data source”** 的官方代码实现。我们提出了一种新型的 **虚拟尺度因子（VSF）归因框架**，并结合融合了重构误差与 T² 统计量的 **增强型自编码器（Enhanced AE）**，为工业异常检测与故障诊断提供了一套完整、鲁棒且具有极强物理可解释性的解决方案。
-
-### ✨ 核心优势
-
-* **更精准的分布捕捉**：相比于传统的梯度（Gradient）或基于 Shapley 值的归因方法，VSF 能够更准确地捕捉非线性多模态数据中的分布结构，有效避免“模态混淆”。
-* **动态故障验证（FER）**：引入“故障消除率”（Fault Elimination Rate）指标，不仅提供静态的变量重要性排序，更能动态验证模型解释与检测机制之间的一致性。
-* **物理可解释性**：基于梯度势场与状态演化方程，结合数据源（Data Source）模型，直接量化变量偏离正常工况的方向与程度。
+**Official PyTorch Implementation** | *论文目前在投于 Journal of Process Control*
 
 ---
 
-## 📂 目录结构
+## 📖 项目简介
+
+在现代工业自动化系统中，**故障检测与根因分析 (RCA)** 是确保生产安全与稳定性的核心。然而，面对复杂工业场景下普遍存在的**高维、强非线性**及**多变量耦合**数据，传统归因方法往往受限于梯度饱和、对噪声敏感及物理意义缺失等瓶颈。
+
+本项目是论文 **“Root Cause Analysis in complex industrial process monitoring via virtual scale factor and data source”** 的官方代码库。我们提出了一种基于 **虚拟尺度因子 (VSF)** 的新型归因框架，并结合了**增强型自编码器 (Enhanced AE)**，旨在为异常检测提供一套兼具鲁棒性与高度物理可解释性的诊断方案。
+
+---
+
+## 🚀 核心优势
+
+* **🔍 高精度分布拟合**：对比传统梯度或 Shapley 值方法，VSF 能精准捕捉多模态数据的分布结构，有效规避“模态混淆”现象。
+* **📈 动态验证指标 (FER)**：创新引入 **故障消除率 (Fault Elimination Rate)**，实现从静态变量重要性排序到动态解释一致性验证的跨越。
+* **⚙️ 强物理可解释性**：利用梯度势场与状态演化方程，结合数据源模型，将变量偏离程度转化为清晰、可量化的物理轨迹。
+
+---
+
+## 🗂️ 项目结构
 
 ```text
-.
-├── attribution.py          # 核心归因算法库：VSF、Gradient、IG、SHAP、DeepLIFT 实现
-├── indicators.py           # 异常检测模型库：PCA、SVDD、Enhanced AE 及超参数配置
-├── 2d_yuan.ipynb           # 2D 合成数据实验：单峰高斯分布归因图表
-├── 2d_feng.ipynb           # 2D 合成数据实验：双峰混合高斯分布 (GMM) 归因图表
-├── duo_tep.ipynb           # TEP 多维工业实验（一）：故障数据加载、评估与特征排序
-├── duo_wei.ipynb           # TEP 多维工业实验（二）：故障消除率 (FER) 曲线绘制
-├── image_d40ba3.png        # TEP 基准测试流程与架构示意图
-├── requirements.txt        # 项目依赖清单
-└── README.md               # 本文件
+├── attribution.py          # 核心算法库：VSF、Gradient、IG、SHAP、DeepLIFT
+├── indicators.py           # 检测模型库：PCA、SVDD、Enhanced AE 配置
+├── 2d_yuan.ipynb           # 实验：单峰高斯分布归因可视化
+├── 2d_feng.ipynb           # 实验：双峰混合高斯 (GMM) 归因可视化
+├── duo_tep.ipynb           # 实验：TEP 数据集故障定位与特征排序
+├── duo_wei.ipynb           # 实验：FER 曲线绘制与性能评估
+├── requirements.txt        # 项目环境依赖
+└── README.md               # 项目文档
 
 ```
 
 ---
 
-## ⚙️ 环境依赖与安装
+## 🛠️ 安装指南
 
-本项目推荐使用 **Python 3.8 或更高版本**。建议使用虚拟环境（如 Conda 或 venv）进行隔离以避免依赖冲突。
+本项目推荐使用 **Python 3.8+** 环境，建议使用 `Conda` 进行隔离管理。
 
-### 安装步骤
-
-**1. 克隆仓库**
+**1. 克隆代码库**
 
 ```bash
-git clone [https://github.com/YourUsername/YourRepoName.git](https://github.com/YourUsername/YourRepoName.git)
+git clone https://github.com/YourUsername/YourRepoName.git
 cd YourRepoName
 
 ```
 
-**2. 安装核心依赖**
+**2. 安装环境依赖**
 
 ```bash
-pip install torch numpy pandas scikit-learn scipy
+pip install torch numpy pandas scikit-learn scipy matplotlib tqdm captum shap jupyter
 
 ```
 
-**3. 安装可视化与可解释性辅助库**
+---
 
-```bash
-pip install matplotlib tqdm captum shap jupyter
+## 📊 快速上手
 
-```
+我们提供了配套的 Jupyter Notebook 脚本，帮助您快速复现论文实验结果：
 
-> **注**：`captum` 用于 DeepLIFT 等基线方法的实现，`shap` 用于 Shapley 值的近似计算。
+| 实验任务 | 执行脚本 | 复现内容 |
+| --- | --- | --- |
+| **单峰分布验证** | `2d_yuan.ipynb` | 生成单峰高斯分布归因热力图 |
+| **GMM 分布验证** | `2d_feng.ipynb` | 验证 VSF 对复杂模态的辨识能力 |
+| **TEP 基准测试** | `duo_tep.ipynb` | Top-k 变量贡献排序及多模型对比 |
+| **FER 评估** | `duo_wei.ipynb` | 绘制动态故障消除率曲线 |
+
+> **提示**：所有生成的图表将自动以 PDF 格式存储在根目录下，方便您直接用于论文排版。
 
 ---
 
-## 🚀 快速开始与图表复现
+## 📜 许可证
 
-我们提供了开箱即用的 Jupyter Notebook 脚本，可一键复现论文中的核心实验结果。所有图表默认以 PDF 格式自动保存在项目根目录下，方便直接用于学术排版。
-
-**1. 2D 合成数据验证实验（图 1 和图 2）**
-
-* **单峰分布**：运行 `2d_yuan.ipynb` 生成归因热力图。
-* **双峰混合高斯分布（GMM）**：运行 `2d_feng.ipynb` 验证 VSF 在复杂分布下避免模态混淆的优势。
-
-**2. TEP 多维工业数据集实验（图 3、图 4 和表 1）**
-
-* **归因方法对比**：运行 `duo_tep.ipynb`，生成各方法在 T²、SVDD 和 Enhanced AE 模型下的 Top‑k 贡献变量排序与对比图表。
-* **动态故障消除率曲线**：运行 `duo_wei.ipynb`，验证变量替换机制并绘制 FER 曲线。
+本项目采用 **MIT License** 开源协议，欢迎各位同仁进行学术交流、引用及二次开发。
 
 ---
 
-## 🧠 核心模块深度解析
-
-为便于二次开发与对比实验，核心逻辑已高度封装。
-
-**增强型自编码器（Enhanced AE）** — 详见 `indicators.py`
-突破传统 AE 仅依赖输入空间重构误差的局限，在损失函数和检测阈值中**融合重构误差与潜在空间马氏距离（T² 统计量）**，显著提升对微小漂移故障的检测敏感度与鲁棒性。
-
-**虚拟尺度因子归因（VSF）** — 详见 `attribution.py` 中的 `VSFAttribution` 类
-VSF 构建虚拟尺度扰动空间，通过求解梯度势场中的状态演化方程，定位系统稳定点（即“数据源”）。最终贡献度由**局部模型敏感度**与**稳态偏差**共同决定，兼具高精度与明确的物理意义。
-
----
-
-## 📄 许可证
-
-本项目采用 [MIT License](https://opensource.org/licenses/MIT) 开源协议，欢迎广大学者和开发者克隆、修改及用于学术交流。
-
----
-
-> 如有任何问题、讨论或建议，欢迎通过 Issues 或 Pull Requests 与我们联系。
-
-```
-
-```
+*如有任何建议或合作意向，欢迎提交 [Issues](https://www.google.com/search?q=https://github.com/YourUsername/YourRepoName/issues) 或发送邮件至联系作者。*
