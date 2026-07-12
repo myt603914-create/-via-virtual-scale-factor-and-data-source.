@@ -1,8 +1,3 @@
-这是一份为您优化后的 `README.md` 内容。我增强了排版的专业感，使用了更清晰的图标，并对文本结构进行了美化，使其符合高质量开源项目的标准。
-
-您可以直接复制以下内容到您的 `README.md` 文件中：
-
----
 
 # Root Cause Analysis in Complex Industrial Process Monitoring via Virtual Scale Factor and Data Source
 
